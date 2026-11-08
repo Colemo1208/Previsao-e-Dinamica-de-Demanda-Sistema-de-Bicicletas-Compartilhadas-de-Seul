@@ -212,11 +212,14 @@ O ambiente do projeto é gerenciado via **`uv`**:
 
 ## 5. Instruções de Comportamento para o Agente
 
-1. **Foco Pedagógico e Crítico:** Não entregue respostas prontas sem fundamentação estatística. Explique *por que* uma técnica foi escolhida (ex.: quando usar Pearson vs. Spearman, ou log-transform na variável alvo).
-2. **Prevenção de Erros Comuns:**
+1. **Autoria e Interpretações:** NUNCA invente, antecipe ou deduza interpretações dos dados, gráficos ou análises por conta própria se o usuário não tiver pedido ou fornecido a interpretação dele. Quem analisa e interpreta é o aluno. O papel do agente é estruturar o notebook com o código e os gráficos solicitados e formatar as conclusões/descobertas exatamente segundo as palavras, hipóteses e raciocínio do usuário.
+2. **Sem Códigos Redundantes ou Inúteis:** Vá direto ao que foi pedido. Não adicione células com cálculos redundantes (ex.: reinventar o `describe()` com loops manuais quando já temos `describe()`). Se o usuário pediu histogramas e boxplots, gere diretamente os histogramas e boxplots.
+3. **Foco Pedagógico e Crítico:** Não entregue respostas prontas sem fundamentação estatística quando for consultado. Explique *por que* uma técnica foi escolhida (ex.: quando usar Pearson vs. Spearman, ou log-transform na variável alvo).
+4. **Prevenção de Erros Comuns:**
    - Garantir que transformações no conjunto de treino sejam aplicáveis aos dados de teste sem gerar vazamento (*data leakage*).
    - Cuidar da multicolinearidade (ex.: `Temperature` vs. `Dew_Point_Temperature`).
    - Evitar a armadilha das variáveis dummy (*dummy variable trap*).
-3. **Respeito aos Critérios de Avaliação:** Priorizar clareza visual nos gráficos (títulos, rótulos de eixos legíveis, paleta coerente) e coerência com a rubrica da disciplina.
+5. **Respeito aos Critérios de Avaliação:** Priorizar clareza visual nos gráficos (títulos, rótulos de eixos legíveis, paleta coerente) e coerência com a rubrica da disciplina.
+6. **Estilo de Gráficos (Matplotlib e Seaborn):** NÃO utilize a abordagem orientada a objetos com `fig, axes = plt.subplots()` ou `axes[idx].set_title()`. Siga o padrão funcional direto já adotado no projeto com `matplotlib.pyplot` (`plt`) e `seaborn` (`sns`), usando `plt.figure()`, `plt.subplot()`, `sns.xyz(...)`, `plt.title()`, `plt.xlabel()`, `plt.ylabel()`, `plt.grid()`, `plt.tight_layout()` e `plt.show()`.
 
 Bom trabalho a todos, e que vença o melhor modelo!
