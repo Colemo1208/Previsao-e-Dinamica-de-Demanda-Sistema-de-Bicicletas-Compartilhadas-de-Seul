@@ -1,3 +1,4 @@
+
 # Exame B – Previsão da Demanda de Bicicletas Compartilhadas
 
 Neste exame, a avaliação acontece em formato de **competição**: em vez de uma prova tradicional, as duplas vão trabalhar com um problema real de ciência de dados, do início ao fim. O desafio é investigar um conjunto de dados sobre o sistema de bicicletas compartilhadas de Seul, na Coreia do Sul, e, a partir dele, desenvolver um modelo capaz de estimar quantas bicicletas serão alugadas em uma determinada hora, com base nas condições do tempo e do calendário.
@@ -23,6 +24,7 @@ O exame está organizado em **três etapas**, cada uma com sua própria entrega.
 O ponto de partida é conhecer bem o dataset. Nesta etapa, a dupla deve examinar cada variável individualmente e, em seguida, observar como elas se relacionam, com foco principal em entender **o que faz a demanda (`Rented_Bike_Count`) subir ou cair**. Problemas de qualidade dos dados, categorias raras ou valores extremos também devem ser identificados aqui, já que influenciam diretamente as decisões das etapas seguintes.
 
 - **Sugestões do que investigar:**
+
   - Medidas resumo (média, mediana, desvio padrão, assimetria) para as variáveis numéricas.
   - Tabelas de frequência para as variáveis categóricas, apontando categorias dominantes e pouco representadas.
   - Histogramas e *boxplots* para visualizar o formato das distribuições e localizar possíveis *outliers*.
@@ -31,21 +33,21 @@ O ponto de partida é conhecer bem o dataset. Nesta etapa, a dupla deve examinar
   - *Boxplots* ou *violin plots* para comparar a distribuição de `Rented_Bike_Count` entre as categorias de uma variável.
   - Matriz de correlação entre as variáveis numéricas, com interpretação dos resultados.
   - Um fechamento destacando quais variáveis parecem mais promissoras para o modelo.
-
 - **O que entregar:**
-  - Notebook com as análises, gráficos e comentários explicando cada passo e o que foi observado.
 
+  - Notebook com as análises, gráficos e comentários explicando cada passo e o que foi observado.
 
 ### Etapa 2: Testes de Hipótese
 
 Com o conhecimento adquirido na exploração, a dupla deve propor **pelo menos três hipóteses** sobre os dados e verificá-las usando testes estatísticos adequados.
 
 - **Alguns exemplos de perguntas:**
+
   - A demanda por bicicletas é diferente entre as estações do ano?
   - Em feriados, a quantidade de bicicletas alugadas muda?
   - Existe relação entre as condições do tempo e a demanda?
-
 - **O que entregar:**
+
   - Notebook apresentando cada hipótese, o teste escolhido, a verificação das suposições do teste e a conclusão obtida.
 
 ### Etapa 3: Construção do Modelo
@@ -53,11 +55,12 @@ Com o conhecimento adquirido na exploração, a dupla deve propor **pelo menos t
 Na última etapa, os alunos deverão construir um modelo de regressão linear múltipla para prever os preços de venda das casas, ou seja, a variável dependente é `Rented_Bike_Count` e as demais podem ser usadas (todas ou apenas parte delas) como variáveis independentes.
 
 - **O que fazer:**
+
   - Ajustar o modelo de **regressão linear**, testando diferentes combinações de variáveis e possíveis transformações.
   - Analisar os resíduos do modelo escolhido.
   - Avaliar a significância das variáveis por meio de ANOVA.
-
 - **O que entregar:**
+
   - Notebook com:
     - O modelo final e a justificativa das escolhas feitas ao longo do processo
     - A análise dos resíduos
@@ -82,7 +85,6 @@ Além dos notebooks, haverá apresentações em sala:
 
 > Cada apresentação terá 10 minutos no total: 7 minutos de exposição e 3 minutos de perguntas. Um integrante, sorteado na hora, faz a apresentação, e o outro fica responsável por responder às perguntas do professor e dos colegas.
 
-
 ## Arguição Final (Nota do Exame B)
 
 Depois da entrega da **Etapa 3 (ET03)**, cada aluno passará por uma arguição **individual** com o professor, em data e horário a serem definidos. A nota obtida nessa arguição será a nota do Exame B.
@@ -93,8 +95,6 @@ Como vai funcionar:
 * **Valor:** cada pergunta vale **5 pontos**.
 * **Tempo:** 5 minutos por aluno.
 * **Conteúdo:** fundamentos teóricos de regressão linear e o notebook entregue pela dupla na Etapa 3.
-
-
 
 ## Bônus da Competição
 
@@ -133,12 +133,10 @@ A ideia deste exame é aproximar a avaliação do que acontece no dia a dia de q
 ### Organização do Notebook
 
 * **Resumo inicial e seções:** comece o notebook com um pequeno resumo dos objetivos e do que foi feito. Cada seção deve ter um cabeçalho no padrão `## Seção X – Nome da Seção`.
-
 * **Hierarquia de títulos:** use os níveis de título do Markdown para deixar o notebook fácil de navegar, com `##` para as partes principais e `###` para os subtópicos. Por exemplo:
 
   * `## Etapa 1 – Análise Exploratória`
   * `### 1.1 Distribuição da Demanda`
-
 * **Comentário no início de cada célula:** toda célula de código deve abrir com um comentário curto dizendo o que ela faz. Siga o padrão PEP8 (nomes descritivos, indentação correta e linhas de até 100 caracteres).
 
 ```python
@@ -171,7 +169,6 @@ Depois de cada transformação importante nos dados, mostre como o dataset ficou
 ### Justificativas
 
 * Sempre que fizer algum tratamento nos dados (remoção de outliers, codificação, transformações, criação de variáveis), adicione uma célula Markdown com o título **Justificativa**, explicando o motivo da escolha com base teórica ou nos próprios dados.
-
 * Nos testes estatísticos, cada hipótese deve conter:
 
   * As hipóteses nula (H₀) e alternativa (H₁) bem definidas.
@@ -195,10 +192,10 @@ Depois de cada transformação importante nos dados, mostre como o dataset ficou
 
 **Resultados:**
 
-| Estatística | Valor |
-|-------------|-------|
+| Estatística                | Valor         |
+| --------------------------- | ------------- |
 | Coeficiente de correlação | *preencher* |
-| p-valor                   | *preencher* |
+| p-valor                     | *preencher* |
 
 **Conclusão:** Indique se H₀ foi rejeitada ou não e o que isso significa na prática.
 
