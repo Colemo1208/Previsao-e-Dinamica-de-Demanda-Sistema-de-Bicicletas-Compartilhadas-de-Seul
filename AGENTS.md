@@ -167,8 +167,8 @@ Depois de cada transformação importante nos dados, mostre como o dataset ficou
 
 ### Justificativas
 
-* Sempre que fizer algum tratamento nos dados (remoção de outliers, codificação, transformações, criação de variáveis), adicione uma célula Markdown com o título **Justificativa**, explicando o motivo da escolha com base teórica ou nos próprios dados.
-* Quando apresentar textos de justificativas ou coisas assim use bullet points e textos em prosas. Pode destacar code
+* [ ] Sempre que fizer algum tratamento nos dados (remoção de outliers, codificação, transformações, criação de variáveis), adicione uma célula Markdown com o título **Justificativa**, explicando o motivo da escolha com base teórica ou nos próprios dados.
+* [ ] Quando apresentar textos de justificativas ou coisas assim use bullet points e textos em prosas. Pode destacar code
   usando `exemplo` de formatação, evite abusar de textos em negrito sem necessidade. Evite colocar o texto assim:
 
 ```markdown
